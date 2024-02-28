@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   animation: fadeIn 1.5s ease-in-out;
+  font-family:sans-serif;
+   scroll-behavior: smooth;
+}
+
+
+ @keyframes ter {
+        0%,100%{transform: translateY(0);}
+        50%{transform: translateY(5px);}
+      }
+
+.judul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+.judul .sos a{
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+.judul .sos a:hover{
+  color: crimson;
+}
+.konten{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  text-align: center;
+}
+.konten h3{
+  margin-bottom:10px;
+}
+.konten #kontak{
+  padding: 9px;
+  border: none;
+  color: white;
+  background:rgba(0,0,0,0.98);
+  width: 35%;
+  margin:30px;
+  transition:all 0.5s ease;
+}
+.konten #kontak:hover{
+  background:rgba(0,0,0,0.56);
+  transform: translateY(-5px);
+}
+.konten p{
+  font-weight: bold;
+  width: 60%;
+  margin-top: 20px;
+}
+footer{
+  background:#0a0a23;
+  color: white;
+  text-align: center;
+}
+footer a{
+  color: crimson;
+  text-decoration: none;
+  
+}
+#ketik{
+  color: crimson;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ales{
+  cursor: pointer;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close-btn {
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+img{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  animation: ter 3s infinite;
+}

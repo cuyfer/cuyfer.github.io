@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 
+
+
+gak usah liat source code nya waud!!! udah liat webnya oon 
+
+
+
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ajib</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  
+  
+  <div class="overlay" id="popup">
+    <div class="popup">
+        <h2>Thank You!</h2>
+        <br>
+        <p>Udah Mampir</p><p>Web jelek bukan berarti gak jago ngoding😁</p>
+        <button class="cta-button" onclick="tutup()">Close</button>
+    </div>
+</div>
+  
+  
+  <div class="judul">
+    <h2 class="ales">AJIB</h2>
+    <div class="sos">
+    <a class="wa" href="https://WA.me/6283182719413?text=*Assalamualaikum Mas broo Anzayyyyyyy*"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+    <a class="google" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc94iFXdizF4zA8X8d5NZZWucDgTZJw7_cww&usqp=CAU"><i class="fa fa-google" style="font-size:24px"></i></a>
+    <a class="instagram" href="https://www.instagram.com/adyfas.ver?igsh=MXVmbXh3dmZlbzk3dQ=="><i class="fa fa-instagram" style="font-size:24px"></i></a>
+    </div>
+  </div>
+  <div class="konten">
+    <img src="./bg.jpg" alt="foto">
+    <h3>Hallo!! Saya <span style="color:crimson;">Ferdi</span></h3>
+     <h1>Saya <span id="ketik"></span></h1>
+     <p>Saya Ferdi Asal Indonesia Yang Membuat Inspirasi Untuk Membangun Teknologi Anzayyy,<span style="color:crimson;"> Yang Penting Ngoding Dulu Saja Bro!</span></p>
+     <button id="kontak">WhatsApp</button>
+  </div>
+  <footer>
+    <a href="#"><p>Fer<span style="color:white;">di</span></p></a>
+                   <p>Copyright © | 
+                   <script>
+                     document.write(new Date().getFullYear());
+                   </script> Ferdi
+                   </p>
+  </footer>
+  <script src="./main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch((error) => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+        
+    </script>
+  </script>
+</body>
+</html>
